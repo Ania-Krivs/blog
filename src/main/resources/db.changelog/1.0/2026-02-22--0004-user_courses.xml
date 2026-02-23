@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="2026-02-22--0004-user_courses" author="ann">
+        <preConditions>
+            <not>
+                <tableExists tableName="user_courses"/>
+            </not>
+        </preConditions>
+        <createTable tableName="user_courses">
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_user_courses" referencedTableName="users" referencedColumnNames="id"/>
+            </column>
+            <column name="course_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_courses_user" referencedTableName="course" referencedColumnNames="id"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

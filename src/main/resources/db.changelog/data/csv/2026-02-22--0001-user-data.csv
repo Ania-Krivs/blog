@@ -1,0 +1,2 @@
+id;email;name;date_of_birth;hash_password;role
+1;ann@mail.ru;ann;2007-12-18;$10$z9ygGiEhv8sZKwkoaErgo.PdoyjlXiFaOiH4.VaPZPq.niss.6xDe;USER
