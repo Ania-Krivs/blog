@@ -6,8 +6,6 @@ import org.hibernate.annotations.Comments;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-import ru.sicampus.bootcamp2026.dto.CommentResponse;
-import ru.sicampus.bootcamp2026.dto.user.UserCreateComment;
 import ru.sicampus.bootcamp2026.dto.user.UserResponse;
 import ru.sicampus.bootcamp2026.entity.Comment;
 import ru.sicampus.bootcamp2026.entity.User;
